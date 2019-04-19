@@ -1,8 +1,16 @@
 *{
 margin: 0;
 padding: 0;
+margin: 0 auto;
 }
 
+.clearfix{
+
+width: 1280px;
+height: auto;
+margin-left: 119;
+float: left;
+}
 .topmenu{
 height: 40;
 width: 1520;
@@ -80,7 +88,6 @@ width: 50px;
 }
 
 /** Maindiv **/
-
 .maindiv{
 background-image: url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg);
 position: absolute;
@@ -99,12 +106,13 @@ font-size: 20;
 .rightmenu{
 background-image: url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg);
 float: right;
-width: 150;
-height: 250;
-position: absolute;
-right: 120;
-    border: 1px solid black;
+width: 150px;
+height: 250px;
+border: 1px solid black;
+
+
 }
+
 .rightmenu h3{
 padding: 5px;
 
