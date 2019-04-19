@@ -1,0 +1,129 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+.topmenu{
+height: 40;
+width: 1520;
+}
+.topmenubar{
+background-image: url(Ba%C5%9Fl%C4%B1ks%C4%B1z-4.jpg);
+height: 40;
+width: 1525;
+}
+.topmenu{
+float: right;
+padding-right: 280px;
+padding-top: 5px;
+}
+.menuitems{
+float: right;
+list-style: none;
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 5px;
+font-size: 25px;
+border-right: 1px solid; 
+}
+.menuitems a{
+text-decoration: none;
+color: black;
+transition: border-bottom 0.2s, color 0.5s;
+}
+.menuitems a:hover{
+color: red;
+border-bottom: 2px solid;
+}
+.buyukresim{
+background-image: url(topbg.jpg);
+width: 1525px;
+height: 400px;
+}
+.buyukresimyazi{
+position: absolute;
+left: 250px;
+top: 150px;
+width: auto;
+height: 80;
+}
+.buyukresimyazi h1{
+font-size: 50px;
+}
+.buyukresimyazi p{
+font-size: 20;
+position: absolute;
+left: 8px;
+}
+.buyukresimlogolar{
+
+position: absolute;
+top: 365px;
+left:150;
+
+}
+.logo{
+float: left;
+padding-right: 10;
+list-style:none;
+
+}
+.logo img{
+
+transition: width 1s,height 1s;
+height: 26;
+width: 26;
+}
+.logo img:hover{
+height: 50px;
+width: 50px;
+}
+
+/** Maindiv **/
+
+.maindiv{
+background-image: url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg);
+position: absolute;
+left: 295;
+width: 950;
+height: 400;
+float: left;
+border: 1px solid black;
+}
+.maindivyazi{
+padding: 10;
+}
+.maindivyazi p{
+font-size: 20;
+}
+.rightmenu{
+background-image: url(50-Beautiful-and-Minimalist-Presentation-Backgrounds-040.jpg);
+float: right;
+width: 150;
+height: 250;
+position: absolute;
+right: 120;
+    border: 1px solid black;
+}
+.rightmenu h3{
+padding: 5px;
+
+}
+.rightmenuitem{
+list-style: none;
+padding: 5;
+border-top: 1px solid;
+transition: background-color 0.5s, color 0.2s;
+}
+.rightmenuitem:hover {
+background-color: red;
+color: white;
+border-top: 0px;
+}
+li:hover a {
+color: inherit;
+border-top: 0px;
+}
+.rightmenuitem a{
+color: black;
+}
