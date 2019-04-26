@@ -1,0 +1,340 @@
+body{
+background-image: url(orta-arka.jpg);
+
+}
+*{
+margin: 0;
+}
+.anadiv{
+width: 1519px;
+height: 504px;
+top:0;
+left:0;
+position:absolute;
+
+}
+.top{
+background-image: url('enust-arka.png');-->
+background-repeat: no-repeat;
+height: 100px;
+padding-left: 80;
+}
+.main{
+margin-left: 260;
+width: 985;
+margin-right: 370;
+float: left;
+}
+.logo{
+padding: 45;
+padding-left: 180;
+}
+
+.topred{
+background-color: red;
+height: 40;
+width: 100%;
+margin: 0 auto;
+}
+.topbar{
+background-color: ;
+width: 600;
+height: 40;
+margin-left: 180;
+padding-left: 70;
+}
+
+.homepng #home{
+padding-right: 6;
+padding-bottom: 10;
+height: 20;
+}
+.homepng #dashed{
+height: 40;
+}
+.homepng{
+width:50;
+height: 40;
+padding-left: 15;
+float: left;
+}
+
+.topmenu{
+color: white;
+}
+.menu{
+margin: 0;
+padding-top: 10;
+}
+
+.menuitem{
+font-family: 'cambria';
+float:left;
+padding-left: 10 ;
+padding-right: 15;
+list-style: none;
+font-size: 18;
+font-style: italic;
+font-weight: bold;
+text-shadow: 1px 1.5px 1px black;
+}
+.menuitem a:hover{
+color: black;
+}
+.menuitem a{
+text-decoration: none;
+color: white;
+}
+
+.slider{
+margin: auto;
+height: auto;
+float: left;
+}
+.news{
+float:left;
+margin-top: 10;
+width: 985;
+height: 100;
+background-image: url(duyuru_box_bg.png);
+background-repeat: no-repeat;
+}
+.news h3{
+float: left;
+padding: 15px;
+font-size: 18;
+font-weight: bold;
+}
+
+.text3{
+float:left;
+width: 400;
+padding: 10;
+}
+.text{
+float:left;
+width: 450;
+padding: 10;
+}
+.blocks1{
+margin-top: 5;
+float: left;
+width: 490;
+}
+
+#block1{
+background-image: url(icerik-yazi-arkaplan.png);
+float: left;
+width: 460px;
+height: 230;
+margin-left: 15;
+margin-top: 15;
+border: 1px solid black;
+border-radius: 7px;
+word-wrap: break-word;
+}
+#block1 img{
+width: 461;
+height: 125px;
+float:left;
+}
+#block2{
+background-image: url(icerik-yazi-arkaplan.png);
+float: left;
+width: 460px;
+height: 230;
+margin-left: 15;
+margin-top: 15;
+border: 1px solid black;
+border-radius: 7px;
+word-wrap: break-word;
+}
+#block2 img{
+width: 460;
+float:left;
+}
+#block3{
+background-image: url(icerik-yazi-arkaplan.png);
+float: left;
+width: 460;
+height: 230;
+margin-top: 20px;
+border: 1px solid black;
+border-radius: 7px;
+}
+#block3 img{
+width: 460;
+float:left;
+}
+#block4{
+background-image: url(icerik-yazi-arkaplan.png);
+float: left;
+width: 460;
+height: 230px;
+margin-top: 15;
+border: 1px solid black;
+border-radius: 7px;
+}
+#block4 img{
+height: 140px;
+width: 460;
+}
+.haberdiv{
+
+width: 985;
+height: 550;
+float: left;
+}
+.footer{
+height: 150px;
+}
+
+/* --HAKKIMIZDA-- */
+.hakkimizdapicbar{
+background-image: url(hakkimizda_img.jpg);
+height: 134;
+margin-top: 20;
+background-repeat: no-repeat;
+}
+.hakkimizdapictext{
+background-color: white;
+font-size: 18;
+font-weight: bold;
+float: left;
+margin-top: 95;
+margin-left: 5;
+padding: 7;
+padding-right: 20px; 
+}
+.hakkimizdatextbg{
+background-image: url(hakkimizda_box_bg.jpg);
+
+height: 400;
+}
+.hakkimizdatext{
+padding-top: 4px;
+padding-bottom: 25px;
+float:left;
+}
+.hakkimizdatextdiv{
+height: 400;
+padding: 15px;
+}
+.icerikbaslik{
+text-decoration: none;
+color: black;
+font-weight: bold;
+padding-top: 15px;
+width: 100%;
+
+}
+
+/* --Hakkımızda footer-- */
+.footer{
+background-color: white;
+float: left;
+height: 70;
+width:100%;
+margin-top: 25px;
+}
+.footericerik{
+height: 70;
+width: 985px;
+margin-left: 260px;
+color: darkgrey;
+}
+.footericeriktext{
+width: auto;
+padding-top: 25px; 
+float:left;
+}
+.footericeriktext a{
+text-decoration: none;
+color: red;
+}
+.footerlogodiv{
+padding-top: 25px;
+float: right;
+width: auto;
+}
+.footerlogo{
+list-style: none;
+float: left;
+padding-right: 10;
+}
+
+/* --Projelerimiz -- */
+.hakkimizdapicbar1{
+background-image: url(hakkimizda_img2.jpg);
+height: 134;
+margin-top: 20;
+background-repeat: no-repeat;
+}
+.projeresimlerbg{
+background-color: white;
+}
+.projeresimlerblok1{
+
+margin-left: 20px;
+padding-top: 20px;
+margin-right: 20px;
+}
+.projeresimlerbg h3{
+padding-bottom: 3px;
+}
+.projeresimlerbg img{
+height: 160px;
+width: 290px;
+padding-top: 5px;
+padding-right: 15px;
+}
+.projeresimlerblok2{
+margin-right: 20px;
+margin-left: 20px;
+padding-top: 20px;
+padding-bottom: 15px;
+}
+
+/* --İletişim -- */
+.iletisimbg{
+background-color: white;
+height: auto;
+width: 985px;
+float: left;
+}
+.iletisimbilgileridiv p{
+padding-left: 20;
+padding-top: 30;
+
+}
+.iletisimbilgileridiv{
+padding-top: 50;
+width: 500px;
+float: left
+}
+
+.bilgigonderdiv{
+float: right;
+width: 350;
+}
+.inputbox{
+margin-top: 10px;
+height: 50px;
+width: 300;
+border-radius: 5px;
+background-color: lightgrey;
+}
+.gondervereset{
+background-color: dimgrey;
+color: white;
+width: 100;
+height: 40;
+border-radius: 10px;
+float:right;
+margin-right: 5px;
+}
+.harita{
+margin-top: 20px;
+margin-bottom: 20px;
+float: left;
+}
