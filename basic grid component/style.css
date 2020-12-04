@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;      
+}
+html,
+body {
+    
+    height: 100%;
+    background-color: rgba(116, 116, 180, 0.144);
+    font-family:'Karla', sans-serif;
+    font-size: 16px
+}
+
+.row{
+    background-color: white;
+    border-radius: 8px;
+    width: 650px;
+
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Top Section */
+.topcontent{
+    padding: 2rem;
+}
+.topcontent h3, .subtitle{
+    font-weight: 700;
+}
+.title{
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+}
+.subtitle{
+    color: hsl(71, 73%, 54%);
+}
+.topsectext{
+    color:rgb(160, 160, 160) ;
+}
+
+/* Subscribe Sign Up Section */
+
+.signupsection{
+    background-color:hsl(179, 62%, 43%);
+}
+
+.signupcontent{
+    color: white;
+    padding:1.1rem;
+
+ 
+}
+.subtitle2{
+    font-weight: 700;
+}
+
+
+/* Why Us Section */
+
+.whyussection{
+    background-color: hsl(179, 46%, 57%);
+
+}
+
+.signupbtn{
+    box-shadow:0px 8px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 250px;
+    background-color: hsl(71, 73%, 54%);
+}
+.signupbtn:hover{
+    background-color: hsl(71, 81%, 60%);
+}
+
+.whyuscontent{
+    padding: 1.1rem;
+}
+
+.whyustext{
+    color: rgba(255, 255, 255, 0.705);
+    margin: 0;
+    font-size: 14px;
+}
