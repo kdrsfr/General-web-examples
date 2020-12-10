@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%)  ;
+}
+
+
+/*hsla(0, 98%, 62%, 0.712)*/
+
+.text-inner-container{
+    color: white;
+    margin-top: 250px;
+    margin-left: 20px;
+}
+.text-inner-container h1{
+    font-weight: 700;
+}
+.text-inner-container p{
+    font-weight: 400;
+}
+
+.form-inner-container{
+    margin-top: 70px;
+}
+.form-elements-cover{
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.tryit-btn{
+    border-radius: 8px;
+    box-shadow: 1px 6px 2px rgba(0, 0, 0, 0.233);
+    margin-bottom: 25px;
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(248, 32%, 49%);
+}
+.form-control{
+    border-radius: 5px;
+    height: 55px;
+    margin-top: 20px;
+}
+::placeholder{
+    font-weight: bold;
+    padding-left: 15px;
+}
+.claimsubmit{
+    box-shadow: 0px 3px 1px hsla(154, 59%, 51%, 0.808);
+    font-weight: 500;
+    color:white;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: hsl(154, 59%, 51%);
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+    }
+    .text-inner-container{
+        color: white;
+        margin-top: 60px;
+        margin-left: 10px;
+    }
+    .text-inner-container h1{
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    .form-inner-container{
+        margin-bottom: 70px;
+    }
+  }
