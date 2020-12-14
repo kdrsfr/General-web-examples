@@ -1,0 +1,294 @@
+
+.navbar{
+    overflow: hidden;
+}
+
+
+
+.nav-link:hover{
+    color: rgb(202, 199, 199)!important;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: white;
+}
+.nav-item{
+    position: relative;
+    padding-left: 1rem;
+}
+
+
+.masthead{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    color: rgba(255, 255, 255, 0.986) no-repeat center center fixed;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    background-image: url(img/computers.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.masthead-subheadding{
+    font-weight: 500;
+    font-size: 28px;
+    color: rgb(209, 206, 206);
+}
+.masthead-heading{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color:  rgb(209, 206, 206);
+}
+.btn-primary{
+    padding: .9rem;
+    color:white;
+    background-color: #fed136;
+    border-color: #fed136;
+}
+.btn-primary:hover{
+    background-color:rgb(216, 174, 21);
+    border-color:rgb(216, 174, 21);
+}
+.btn-primary:focus{
+    background-color:rgb(216, 174, 21);
+    border-color:rgb(216, 174, 21);
+}
+.btn-primary:active{
+    background-color:rgb(155, 124, 11) !important;
+    border-color:rgb(145, 116, 12) !important;
+}
+
+.jumbotron-text{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.service-hr{
+    border-color: tomato;
+    width: 300px;
+    border-radius: 2px;
+    border-width: 4px;
+}
+.servicelogos{
+    font-size: 48px;
+}
+
+.service-cards{
+    margin-top: 1rem;
+    padding: 2rem;
+    
+}
+.service-cards h3{
+    margin-top: 12px;
+}
+
+.card1{
+
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 250px;
+    opacity: 0.7;
+}
+.card1 i, .card1 h3, .card1 p{
+    color: black;
+    position: relative;
+
+    z-index: 2;
+}
+.card2{
+
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:250px;
+    opacity: 0.7;
+}
+.card2 i, .card2 h3, .card2 p{
+    color: black;
+    position: relative;
+    z-index: 2; 
+}
+.card3{
+
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height:250px;
+    opacity: 0.7;
+}
+.card3 i, .card3 h3, .card3 p{
+    color: black;
+    position: relative;
+    z-index: 2;
+}
+
+#cardcontainer {
+    position: relative;
+    width: auto;
+}
+  
+#cardimage{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.portföyinner{
+    align-items: center;
+}
+.porfolio-row{
+    margin: 0;
+}
+  
+#overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #4d4d4581;
+}
+  
+#cardcontainer:hover #overlay{
+    opacity: 1;
+}
+  
+#overlaytext{
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img-responsive{
+    margin:0 auto;
+    height: auto;
+    width: auto;
+}
+.modal-content{
+    height: auto;
+    width: auto;
+}
+
+.teamrowr{
+    align-items: center;
+    width: 200px;
+}
+
+.teammember img{
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.teamsocial{
+    color: #000;
+    font-size: 2rem;
+}
+.teamsocial:hover{
+    color: rgb(78, 78, 78);
+}
+
+
+/* Footer */
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+  }
+  
+  hr.light{
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+  footer a{
+    color: #d5d5d5;
+  }
+  hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    width: 100%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+  }
+
+
+@media screen and (max-width: 765px) {
+    .modal-content{
+        width: 90%;
+    }
+    .img-responsive{
+        
+        height: auto;
+        width: 100%;
+    }
+    .navbar{
+        overflow: hidden;
+        background-color:rgba(255, 255, 255, 0.301);
+        
+    }
+    .fa-bars{
+        font-size: 1.5em;
+    }
+  }
+  @media screen and (max-width: 990px) {
+    .modal-content{
+        width: 90%;
+    }
+    .img-responsive{
+        
+        height: auto;
+        width: 100%;
+    }
+    .card1{
+
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 300px;
+        opacity: 0.7;
+    }
+    .card2{
+
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:300px;
+        opacity: 0.7;
+    }
+    .card3{
+
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height:300px;
+        opacity: 0.7;
+    }
+
+
+    .teammember{
+        margin-top: 30px;
+    }
+  }
