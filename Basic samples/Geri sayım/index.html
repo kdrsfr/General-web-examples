@@ -1,0 +1,110 @@
+<html>
+
+<head>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #div1 {
+            width: 40%;
+            height: auto;
+            position: relative;
+            left: 500px;
+            top: 250px;
+        }
+
+        #saat {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            font-size: 128px;
+        }
+
+        #dakika {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            float: left;
+            margin-right: 5px;
+            text-align: center;
+            font-size: 128px;
+        }
+
+        #saniye {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            float: left;
+            text-align: center;
+            font-size: 128px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+
+        <div class="blok" id="saat">
+
+        </div>
+
+        <div class="blok" id="dakika">
+
+        </div>
+
+        <div class="blok" id="saniye">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+
+        var saat = prompt("Saat", 0);
+        var dakika = prompt("Dakika", 0);
+        var saniye = prompt("Saniye", 0);
+
+        var a = setInterval(function () {
+            document.getElementById("saat").innerHTML = saat;
+            document.getElementById("dakika").innerHTML = dakika;
+            document.getElementById("saniye").innerHTML = saniye--;
+
+            if (Number(document.getElementById("saniye").innerHTML) == 0) {
+                dakika--;
+                saniye = 59;
+            }
+
+            if (Number(document.getElementById("dakika").innerHTML) == 0 &&
+                Number(document.getElementById("saniye").innerHTML) == 0) {
+                saat--;
+                dakika = 59;
+            }
+
+            if (Number(document.getElementById("saat").innerHTML) == 0 &&
+                Number(document.getElementById("dakika").innerHTML) == 0 &&
+                Number(document.getElementById("saniye").innerHTML) == 0) {
+                clearInterval(a);
+                for (var i = 0; i < 3; i++) {
+                    document.getElementsByClassName("blok")[i].style.backgroundColor = "red";
+                }
+            }
+
+
+
+
+        }, 1000)
+
+    </script>
+</body>
+
+</html>

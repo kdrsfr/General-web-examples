@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+    <style>
+        #div1 {
+            width: 30%;
+            height: 200px;
+            background-color: lightskyblue;
+            position: absolute;
+            border-radius: 15px;
+            left: 35%;
+            top: 30%;
+        }
+
+        #kullaniciAdi {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+
+        }
+
+        #kullaniciSifre {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 55px;
+        }
+
+        #btn {
+            width: 300;
+            height: 30px;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <label style="margin-left: 15px;" for="kullaniciAdi">Kullanıcı Adı:</label>
+        <input id="kullaniciAdi" type="text">
+        <br>
+        <label style="margin-left: 15px;" for="kullaniciSifre">Şifre:</label>
+        <input id="kullaniciSifre" type="password">
+        <br>
+        <button id="btn" onclick="girisOnayi()">Giriş Yap</button>
+    </div>
+
+
+    <script>
+
+        var kullanicilar = [
+            { kullaniciAdi: "admin", parola: "1234" },
+            { kullaniciAdi: "mehmet", parola: "mehmeto" },
+            { kullaniciAdi: "asli", parola: "123123" }
+        ]
+
+        var girilenKullaniciAdi;
+        var girilenSifre;
+        var i;
+
+        function kontrolEt() {
+            girilenKullaniciAdi = document.getElementById("kullaniciAdi").value;
+            girilenSifre = document.getElementById("kullaniciSifre").value;
+
+            for (i of kullanicilar) {
+                if ((i.kullaniciAdi == girilenKullaniciAdi) && (i.parola == girilenSifre)) {
+                    return true;
+                }
+            }
+        }
+
+        function girisOnayi() {
+            var kontrol = kontrolEt();
+
+            if (kontrol) {
+                window.open("https://www.google.com", "_blank");
+            }
+            else {
+                alert("Hatalı kullanıcı adı ya da şifre.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>

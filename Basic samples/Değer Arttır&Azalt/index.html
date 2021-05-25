@@ -1,0 +1,38 @@
+<html>
+<head>
+
+    <style>
+        #arttır{
+            background-color: green;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input id="text" tpye="input" value="0">
+    <button id="arttır" onclick="artirma()">+</button>
+    <button id="azalt" onclick="azaltma()">-</button>
+
+
+<script>
+    function artirma(){
+       var a = document.getElementById("text").value;
+       a = Number(a);
+       a += 1;
+       document.getElementById("text").value = a;
+    }
+
+    function azaltma(){
+       var a = document.getElementById("text").value;
+       a = Number(a);
+       a -= 1;
+       document.getElementById("text").value = a;
+    }
+</script>
+</body>
+</html>

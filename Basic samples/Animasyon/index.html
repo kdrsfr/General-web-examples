@@ -1,0 +1,99 @@
+<html>
+
+<head>
+
+
+</head>
+
+<body>
+
+    <div id="div1">
+
+    </div>
+
+
+    <script>
+        var box = document.getElementById("div1");
+        box.style.width = "150px";
+        box.style.height = "150px";
+        box.style.position = "absolute";
+        box.style.top = "1px";
+        box.style.left = "1px";
+        box.style.backgroundColor = "yellow";
+
+
+        var audio = new Audio('bounce.mp3');
+
+        var yukariDon = false;
+        var solaDon = false;
+
+        function animasyon(box, top, left) {
+
+            var ustKonum = Number(box.style.top.split("px")[0]);
+            var solKonum = Number(box.style.left.split("px")[0]);
+
+            if (ustKonum >= (window.innerHeight - 150)) {
+                yukariDon = true;
+                audio.play();
+                change();
+            }
+            else if (ustKonum <= 0) {
+                yukariDon = false;
+                audio.play();
+                change();
+            }
+            box.style.top = (ustKonum + top).toString() + "px";
+
+            if (solKonum >= (window.innerWidth - 150)) {
+                solaDon = true;
+                audio.play();
+                change();
+            }
+            else if (solKonum <= 0) {
+                solaDon = false;
+                audio.play();
+                change();
+            }
+            box.style.left = (solKonum + left).toString() + "px"
+        }
+
+        setInterval(function () {
+            if (yukariDon == true && solaDon == true) {
+                animasyon(box, -0.5, -0.5);
+
+            }
+            else if (yukariDon == false && solaDon == true) {
+                animasyon(box, 0.5, -0.5);
+
+            }
+            else if (yukariDon == true && solaDon == false) {
+                animasyon(box, -0.5, 0.5);
+
+            }
+            else {
+                animasyon(box, 0.5, 0.5);
+
+            }
+
+        }, 2)
+
+
+        function randomInt(min, max) {
+            return min + Math.floor((max - min) * Math.random());
+        }
+
+        function rgb(r, g, b) {
+            return "rgb(" + r + ", " + g + ", " + b + ")";
+        }
+
+        function randomRgb() {
+            return rgb(randomInt(0, 255), randomInt(0, 255), randomInt(0, 255));
+        }
+
+        function change() {
+            document.getElementById('div1').style.backgroundColor = randomRgb();
+        }
+    </script>
+</body>
+
+</html>

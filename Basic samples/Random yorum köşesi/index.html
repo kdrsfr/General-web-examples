@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+    <style>
+        #div1 {
+
+            width: 10%;
+            height: 150px;
+        }
+
+        #div2 {
+            background-color: yellow;
+            width: 100%;
+            height: 100px;
+        }
+
+        #div3 {
+            background-color: tomato;
+            width: 100%;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="div1">
+        <div id="div2">
+
+        </div>
+
+        <div id="div3">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var a = [{ yorum: "Lorem", isim: "Kullanici4" },
+        { yorum: "Kullanıcı 3 Kullanıcı 3", isim: "Kullanici 3" },
+        { yorum: "Kullanıcı 2 yorum", isim: "Kullanici 2" },
+        { yorum: "Kullanıcı 1 yorum", isim: "Kullanici 1" }
+        ]
+
+        var ramdom;
+
+        function sayiUret() {
+            random = Math.round(Math.random() * 3);
+        }
+
+        setInterval(function () {
+            sayiUret();
+            document.getElementById("div2").innerHTML = a[random].yorum;
+            document.getElementById("div3").innerHTML = a[random].isim;
+        }, 2000);
+
+
+    </script>
+</body>
+
+</html>

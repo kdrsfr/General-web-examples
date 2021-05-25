@@ -1,0 +1,139 @@
+<html>
+
+<head>
+
+    <style>
+        #div1 {
+            width: 30%;
+            height: auto;
+            background-color: lightskyblue;
+            position: absolute;
+            border-radius: 15px;
+            left: 35%;
+            top: 30%;
+        }
+
+        #vize1 {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 55px;
+        }
+
+        #vize2 {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 55px;
+        }
+
+        #final {
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            margin-left: 63px;
+        }
+
+        #btn {
+            width: 300;
+            height: 30px;
+            margin-left: 70px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #div2 {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            color: white;
+            margin: auto;
+            display: none;
+            font-size: 28px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <label style="margin-left: 15px;" for="vize2">Vize 1:</label>
+        <input id="vize1" type="text">
+
+        <br>
+
+        <label style="margin-left: 15px;" for="vize2">Vize 2:</label>
+        <input id="vize2" type="text">
+
+        <br>
+
+        <label style="margin-left: 15px;" for="final">Final:</label>
+        <input id="final" type="text">
+
+        <br>
+        <br>
+
+        <div id="div2">
+        </div>
+
+        <br>
+
+        <button id="btn" onclick="yazdir()">Giriş Yap</button>
+    </div>
+
+
+    <script>
+
+        var vize1, vize2, final, ort;
+
+        function hesapla() {
+            vize1 = document.getElementById("vize1").value;
+            vize2 = document.getElementById("vize2").value;
+            final = document.getElementById("final").value;
+
+            ort = (vize1 * 0.3) + (vize2 * 0.3) + (final * 0.4);
+            return ort;
+        }
+
+        function harfNotu() {
+            var harfort = hesapla();
+
+            if (harfort > 90) {
+                return "AA";
+            }
+            else if (harfort > 80) {
+                return "BB";
+            }
+            else if (harfort > 70) {
+                return "CB";
+            }
+            else if (harfort > 60) {
+                return "CC";
+            }
+            else if (harfort > 50) {
+                return "DC";
+            }
+            else if (harfort > 40) {
+                return "DD";
+            }
+            else {
+                return "FF";
+            }
+        }
+
+        function yazdir() {
+            document.getElementById("div2").style.display = "block";
+            document.getElementById("div2").innerHTML = harfNotu();
+            if (harfNotu() == "FF") {
+                document.getElementById("div2").style.backgroundColor = "red";
+            }
+            else {
+                document.getElementById("div2").style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+
+</html>
