@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="bg" class="child">
+
+            <div class="card">
+                <img src="pepsi2-trimmy.png" id="pepsi">
+                <div id="text" class="">
+                    <p style="font-size: 26px;" id="head">PEPSI COLA</p>
+                    <p style="margin-top:0;">Lorem ipsum dolor sit amet adipiscing bibendum sem orci tempus aliquet
+                        gravida, orci amet
+                        iaculis
+                        aptent blandit quam accumsan donec in facilisis.</p>
+                    <button id="btn" onclick="">Buy Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        $(".card").mouseover(function () {
+            $("#text").css({
+                "opacity": "1",
+                "left": "0",
+                "transition": "0.5s"
+            });
+            $("#pepsi").css({
+                "height": "430px",
+                "width": "210px",
+                "left": "72%",
+                "transition": "0.5s",
+            });
+
+
+
+        }).mouseout(function () {
+            $("#text").css({
+                "opacity": "0",
+                "left": "60px",
+                "transition": "0.5s"
+            });
+            $("#pepsi").css({
+                "height": "300px",
+                "width": "150px",
+                "left": "50%",
+                "transition": "0.5s",
+            });
+
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
