@@ -1,0 +1,144 @@
+body{
+    background-image: url(bgim.jpg);
+}
+
+.container{
+
+    height: 400px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoe{
+    margin-left: 20px;
+    margin-top: 90px;
+    width: 280px;
+    height: 135px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(0deg);
+	transition:  0.4s ;
+    position: relative;
+}
+.card{
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+.card:hover .shoe{
+    position: relative;
+    bottom:130px;
+    right: 60px;
+    height: 190px;
+    width: 340px;
+    transform: rotate(-25deg);
+	transition:  0.4s ;
+}
+.card-title{
+    position: relative;
+    transition:  0.4s;
+    bottom: 0;
+}
+.card:hover .card-title{
+    position: relative;
+    transition:  0.4s ;
+    bottom: 100px;
+}
+
+.btn-xs{
+    width: 20px;
+    height: 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: lightgray;
+    margin-right: 6px;
+}
+
+.btn-xs:hover{
+    background-color: #BFF946;
+    cursor: pointer;
+    user-select: none;
+}
+.sizesec input[type="radio"]:checked+label{
+    background-color: #BFF946;
+    box-shadow: none;
+}
+
+.sizesec{
+    user-select: none;
+    position: relative;
+    visibility:hidden;
+    transition: 0.4s;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.card:hover .sizesec{
+    transition: 0.4s;
+    position: relative;
+    opacity: 1;
+    visibility:visible;
+    bottom: 90px;
+}
+
+.colorsec input[type=radio] {
+    display:none;
+}
+.colorsec{
+    position: relative;
+    visibility: hidden;
+    bottom: 0px;
+    transition: 0.4s;
+    opacity: 0;
+    user-select: none;
+}
+.radios{
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2.5px solid rgb(223, 223, 223);
+    cursor: pointer;
+    bottom: 0px;
+    margin-right: 6px;    
+}
+
+#l1{background-color: red;}
+#l2{background-color: blue;}
+#l3{background-color: green;}
+
+.colorsec input[type=radio]:checked + .radios {
+    transition: 0.2s;
+    width: 20px;
+    height: 20px;
+}
+
+.card:hover .colorsec{
+    position: relative;
+    transition: 0.4s;
+    opacity: 1;
+    visibility:visible ;
+    bottom: 70px;
+}
+
+#btn{
+    position: relative;
+    background-color: rgb(233, 229, 229);
+    border-radius: 30px;
+    font-weight: 600;
+    bottom: 0px;
+    opacity: 0;
+    transition: 0.4s;
+}
+.card:hover #btn{
+    position: relative;
+    transition: 0.4s;
+    opacity: 1;
+    visibility: visible;
+    bottom: 60px;
+}
